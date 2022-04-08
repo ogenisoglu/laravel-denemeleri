@@ -12,7 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('giris');
+Route::get('/',function(){
+   echo 'null';
+});
+Route::get('/{name}', function ($name = null) {
+    echo $name." yazdırıldı";
 });
